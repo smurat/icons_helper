@@ -7,7 +7,7 @@ dependencies:
   flutter:
     sdk: 'flutter'
 
-  font_awesome_flutter: ^8.5.0
+  font_awesome_flutter: ^8.8.1
   flutter_driver:
     sdk: flutter
 
