@@ -1,6 +1,7 @@
 library icons_helper;
 
-import 'package:flutter/material.dart';
+import 'package:flutter/
+.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 // Returns an icon by examining the name for the format ICON_LIBRARY.ICON_NAME and if not, looks for a Material icon of the ICON_NAME
@@ -41,11 +42,13 @@ IconData getIconGuessFavorMaterial({String name}) {
 }
 
 // Kinda self explanatory, no?
-IconData getMaterialIcon({String name}) {
-      bool contains = IconsMap.containsKey(name);
-      if (contains) return IconsMap[name];
-      return null;
-    }
+IconData getMaterialIcon({String name,String defaultName}) {
+  bool containsName = IconsMap.containsKey(name);
+  if (containsName) {
+    return IconsMap[name]
+  }
+  else return IconsMap[defaultName];
+}
 
 // Kinda self explanatory, no?
 IconData getFontAwesomeIcon({String name}) {
