@@ -43,11 +43,9 @@ IconData getIconGuessFavorMaterial({String name}) {
 
 // Kinda self explanatory, no?
 IconData getMaterialIcon({String name,String defaultName}) {
-  bool containsName = IconsMap.containsKey(name);
-  if (containsName) {
-    return IconsMap[name]
-  }
-  else return IconsMap[defaultName];
+  bool contains = IconsMap.containsKey(name);
+  if (contains) return IconsMap[name];
+  return null;
 }
 
 // Kinda self explanatory, no?
